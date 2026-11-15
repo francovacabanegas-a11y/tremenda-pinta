@@ -39,6 +39,7 @@
 export const MARCAS = [
   { nombre: 'Dickies', destacada: true },
   { nombre: 'Lululemon' },
+  { nombre: 'Panama Jack' },
   // { nombre: 'Carhartt' },
   // { nombre: 'Champion' },
   // { nombre: 'Nike' },
@@ -84,6 +85,56 @@ export const CATEGORIAS = [
 /** @type {Producto[]} */
 export const PRODUCTOS = [
   // 👇 PEGÁ LOS PRODUCTOS NUEVOS AQUÍ (los primeros de la lista salen primero en la web)
+{
+    id: 'panama-jack-pantalon-secado-rapido',
+    nombre: 'Pantalón Secado Rápido Panama Jack',
+    marca: 'Panama Jack',
+    categoria: 'bottoms',
+    precio: 195,
+    tallas: ['34 (44 nacional)'],
+    estado: 'Disponible',
+    descripcion:
+      'Pantalón americano Panama Jack gris oscuro de tela técnica liviana y secado rápido. Talla US 34x30 (equivale a 44 nacional).',
+    imagen: '/img/productos/panama-jack-1.jpg',
+    imagenes: [
+      { src: '/img/productos/panama-jack-1.jpg', vista: 'Prenda' },
+      { src: '/img/productos/panama-jack-etiqueta.jpg', vista: 'Etiqueta' },
+    ],
+  },
+  {
+    id: 'lululemon-short-blanco-8reg',
+    nombre: 'Short Deportivo Lululemon Blanco',
+    marca: 'Lululemon',
+    categoria: 'shorts',
+    precio: 80,
+    tallas: ['8 Reg'],
+    estado: 'Disponible',
+    descripcion:
+      'Short deportivo Lululemon original color blanco con cintura elástica, paneles laterales de malla respirable y forro interior.',
+    imagen: '/img/productos/lululemon-blanco-1.jpg',
+    imagenes: [
+      { src: '/img/productos/lululemon-blanco-1.jpg', vista: 'Espalda / Logo' },
+      { src: '/img/productos/lululemon-blanco-2.jpg', vista: 'Frente' },
+      { src: '/img/productos/lululemon-blanco-etiqueta.jpg', vista: 'Etiqueta' },
+    ],
+  },
+  {
+    id: 'lululemon-short-negro-talla4',
+    nombre: 'Short Deportivo Lululemon Negro',
+    marca: 'Lululemon',
+    categoria: 'shorts',
+    precio: 80,
+    tallas: ['4'],
+    estado: 'Disponible',
+    descripcion:
+      'Short deportivo ajustado Lululemon original color negro con pretina ancha estampada gris/negro y logo reflectivo posterior.',
+    imagen: '/img/productos/lululemon-negro-1.jpg',
+    imagenes: [
+      { src: '/img/productos/lululemon-negro-1.jpg', vista: 'Espalda / Logo' },
+      { src: '/img/productos/lululemon-negro-2.jpg', vista: 'Frente' },
+      { src: '/img/productos/lululemon-negro-etiqueta.jpg', vista: 'Talla' },
+    ],
+  },
 
   {
     id: 'lululemon-short-vino-colorblock',
@@ -91,7 +142,7 @@ export const PRODUCTOS = [
     marca: 'Lululemon',
     categoria: 'shorts',
     precio: 120, // ← cambiá este monto por tu precio real
-    tallas: ['M'], // ← cambiá por la talla real de la etiqueta
+    tallas: ['L'], // ← cambiá por la talla real de la etiqueta
     estado: 'Disponible',
     descripcion:
       'Short deportivo Lululemon original en tono vino/borgoña con pretina ancha a rayas y bloques de color. Incluye bolsillo trasero con cierre amarillo neón y logo reflectivo Lululemon en la parte posterior. Tela liviana y cómoda, ideal para entrenar o uso diario.',
